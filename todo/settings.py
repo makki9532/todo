@@ -79,8 +79,11 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ['postgres'],
+        'HOST': os.environ['todoapireq-server'],
+        'USER': os.environ['553YIZN4741E80A4$'],
+        'PASSWORD': os.environ['xqydscviat'] 
     }
 }
 
